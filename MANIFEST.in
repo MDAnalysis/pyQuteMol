@@ -1,0 +1,4 @@
+include README MANIFEST.in
+include qutemol.py
+include src/*.c src/*.pyx src/*.h
+
