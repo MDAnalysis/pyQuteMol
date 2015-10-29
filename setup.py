@@ -15,11 +15,16 @@ extensions = [
               extra_link_args=["-framework","OpenGL"])
     ]
 
+RELEASE = "0.0.1"
+
 setup(
-    name="Qutemol",
-    packages          = ['Qutemol', 'Qutemol.presets'],
-    package_dir       = {'Qutemol': 'python'},
-    ext_package       = 'Qutemol',
-    ext_modules       = extensions,
+    name="pyQuteMol",
+    author='Naveen Michaud-Agrawal',
+    license='GPL 2',
+    url='https://github.com/MDAnalysis/pyQuteMol',
+    packages=['Qutemol', 'Qutemol.presets'],
+    package_dir= {'Qutemol': 'python'},
+    ext_package='Qutemol',
+    ext_modules= extensions,
     #cmdclass = {'build_ext': build_ext}
 )
